@@ -1,0 +1,190 @@
+---
+import '../styles/base/_reset.scss';
+import '../styles/base/_variables.scss';
+import '../styles/header.scss';
+import '../styles/footer.scss';
+import '../styles/common.scss';
+import '../styles/drink.scss';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "トップページ｜豚骨らあめん専門店 とんこつ家ZUN";
+const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="450" src={siteDomein + '20240708133029296133.png'} alt="ドリンク" class="pageHeaderImg" width="1411" height="420" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">ドリンク</h1>
+            </div>
+        </section>
+        <section class="section menuSection">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <p class="sectionHeadTtl">ドリンクメニュー</p>
+                    <h2 class="sectionHeadDesc">Menu</h2>
+                </div>
+                <div class="menu">
+                    <div class="menuItem">
+                        <h3 class="menuHead">ビール</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">キリン一番搾り</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">小 350円</p>
+                                <p class="menuPriceItem">中 600円</p>
+                                <p class="menuPriceItem">大 950円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">山雅ビール（ビアカクテル）</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">640円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">キリン一番搾り（中瓶）</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">600円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">アサヒスーパードライ（中瓶）</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">600円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow">
+                            <p class="menuName">キリングリーンズフリー</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">450円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">ハイボール</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">陸ハイボール</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">中 550円</p>
+                                <p class="menuPriceItem">大 800円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">陸ハイボール　濃いめ</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">中 600円</p>
+                                <p class="menuPriceItem">大 900円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">サワー</h3>
+                        <div class="menuItemRow borderBox">
+                            <div class="menuName">
+                                <p>ウーロンハイ</p>
+                                <p>緑茶ハイ</p>
+                                <p>レモンサワー</p>
+                                <p>赤ぶどうサワー</p>
+                                <p>グレープフルーツサワー</p>
+                                <p>カルピスサワー</p>
+                                <p>氷結無糖レモン</p>
+                            </div>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">各 500円</p>
+                                <p class="menuPriceItem">大 800円</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menuItem">
+                        <h3 class="menuHead">果実酒</h3>
+                        <div class="menuItemRow borderBox">
+                            <h4 class="menuItemRowHead">ロック、ストレート、水割り、お湯割り、ソーダ割り</h4>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <div class="menuName">
+                                <p>濃厚梅酒</p>
+                                <p>赤ぶどう酒</p>
+                            </div>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">各 500円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">本格焼酎</h3>
+                        <div class="menuItemRow borderBox">
+                            <h4 class="menuItemRowHead">ロック、ストレート、水割り、お湯割り、ソーダ割り</h4>
+                        </div>
+
+                        <div class="menuItemRow borderBox">
+                            <div class="menuName">
+                                <p>芋 幻の霧</p>
+                                <p>芋 どまんなか</p>
+                                <p>麦 白水</p>
+                                <p>麦 どまんなか</p>
+                            </div>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">各 550円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">ソフトドリンク</h3>
+                        <div class="menuItemRow borderBox">
+                            <div class="menuName">
+                                <p>緑茶</p>
+                                <p>ウーロン茶</p>
+                                <p>コーラ</p>
+                                <p>オレンジジュース</p>
+                                <p>カルピス</p>
+                                <p>カルピスソーダ</p>
+                            </div>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">各 300円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <h3 class="menuHead">日本酒</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">大雪渓</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">一合 550円</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="circle topLeft"></div>
+                <div class="circle topRight"></div>
+                <div class="circle bottomLeft"></div>
+                <div class="circle bottomRight"></div>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+---
+import '../styles/base/_reset.scss';
+import '../styles/base/_variables.scss';
+import '../styles/header.scss';
+import '../styles/footer.scss';
+import '../styles/common.scss';
+import '../styles/menu.scss';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "メニュー｜豚骨らあめん専門店 とんこつ家ZUN";
+const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="450" src={siteDomein + '20240708133029183930.png'} alt="メニュー" class="pageHeaderImg" width="1411" height="420" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">メニュー</h1>
+            </div>
+        </section>
+        <aside class="section tileSection">
+            <div class="tile">
+                <div class="tileItem">
+                    <img src={siteDomein + '20240708144010783798.png'} alt="提供しているお料理のイメージ画像" class="img" width="260" height="180">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240708144010323536.png'} alt="提供しているお料理のイメージ画像" class="img" width="260" height="180">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240708144010701030.png'} alt="提供しているお料理のイメージ画像" class="img" width="260" height="180">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240708144010819481.png'} alt="提供しているお料理のイメージ画像" class="img" width="260" height="180">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240708144010131188.png'} alt="提供しているお料理のイメージ画像" class="img" width="260" height="180">
+                </div>
+                <div class="tileItem">
+                    <img src={siteDomein + '20240708144010174759.png'} alt="提供しているお料理のイメージ画像" class="img" width="260" height="180">
+                </div>
+            </div>
+            <p class="overlayHeadEn">FOOD MENU</p>
+        </aside>
+        <section class="section lunchSection">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <p class="sectionHeadTtl">ランチセット</p>
+                    <h2 class="sectionHeadDesc">Lunch Set</h2>
+                </div>
+                <div class="flex lunchMenu">
+                    <div class="lunchMenuItem">
+                        <img src={siteDomein + '20240711184617567125.png'} alt="ランチセット お好きなラーメン" class="img" width="162" height="189">
+                        <p class="lunchMenuName">お好きなラーメン</p>
+                    </div>
+                    <div class="lunchMenuItem">
+                        <img src={siteDomein + '20240711184617232474.png'} alt="ランチセット プラスアイコン" class="img" width="90" height="90">
+                    </div>
+                    <div class="lunchMenuItem">
+                        <div class="sideMenuItemWrap">
+                            <div class="sideMenuItem sideMenuItem01">
+                                <div class="sideMenuItemInr">
+                                    <p class="sideMenuItemName">日替わりご飯</p>
+                                    <p class="sideMenuItemNameSmall">（数量限定）</p>
+                                </div>
+                                <p class="sideMenuItemPrice">200</p>
+                            </div>
+                            <div class="sideMenuItem sideMenuItem02">
+                                <div class="sideMenuItemInr">
+                                    <p class="sideMenuItemName">
+                                        ライス小<br>
+                                        ＋<br>
+                                        餃子(3個)
+                                    </p>
+                                </div>
+                                <p class="sideMenuItemPrice">350</p>
+                            </div>
+                            <div class="sideMenuItem sideMenuItem03">
+                                <div class="sideMenuItemInr">
+                                    <p class="sideMenuItemName">餃子(3個)</p>
+                                </div>
+                                <p class="sideMenuItemPrice">250</p>
+                            </div>
+                        </div>
+                        <p class="lunchMenuName">サイドメニュー</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section menuSection">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <p class="sectionHeadTtl">料理メニュー</p>
+                    <h2 class="sectionHeadDesc">Menu</h2>
+                </div>
+                <div class="menu">
+                    <div class="menuItem">
+                        <h3 class="menuHead">豚骨醤油らあめん</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">豚骨醤油らあめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 820円</p>
+                                <p class="menuPriceItem">中 930円</p>
+                                <p class="menuPriceItem">大 1,040円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">釜焼き焼豚 豚骨醤油らあめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,130円</p>
+                                <p class="menuPriceItem">中 1,240円</p>
+                                <p class="menuPriceItem">大 1,350円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow">
+                            <p class="menuName">豚骨醤油らあめん スペシャル</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,210円</p>
+                                <p class="menuPriceItem">中 1,320円</p>
+                                <p class="menuPriceItem">大 1,430円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">豚骨味噌らあめん</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">豚骨味噌らあめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 850円</p>
+                                <p class="menuPriceItem">中 960円</p>
+                                <p class="menuPriceItem">大 1,070円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">釜焼き焼豚 豚骨味噌らあめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,160円</p>
+                                <p class="menuPriceItem">中 1,270円</p>
+                                <p class="menuPriceItem">大 1,380円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow">
+                            <p class="menuName">豚骨味噌らあめん スペシャル</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,240円</p>
+                                <p class="menuPriceItem">中 1,350円</p>
+                                <p class="menuPriceItem">大 1,460円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">激辛ONI</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">激辛ONI</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 920円</p>
+                                <p class="menuPriceItem">中 1,030円</p>
+                                <p class="menuPriceItem">大 1,140円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">釜焼き焼豚 激辛ONI</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,230円</p>
+                                <p class="menuPriceItem">中 1,340円</p>
+                                <p class="menuPriceItem">大 1,450円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow">
+                            <p class="menuName">激辛ONI スペシャル</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,310円</p>
+                                <p class="menuPriceItem">中 1,420円</p>
+                                <p class="menuPriceItem">大 1,580円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">豚骨魚介つけめん</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">豚骨魚介つけめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">1.5玉 990円</p>
+                                <p class="menuPriceItem">2玉 1,100円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">釜焼き焼豚 豚骨魚介つけめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">1.5玉 1,310円</p>
+                                <p class="menuPriceItem">2玉 1,420円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow">
+                            <p class="menuName">豚骨魚介つけめん スペシャル</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">1.5玉 1,380円</p>
+                                <p class="menuPriceItem">2玉 1,490円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">ご当地ラーメン「王様中華そば」</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">王様中華そば</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 820円</p>
+                                <p class="menuPriceItem">中 930円</p>
+                                <p class="menuPriceItem">大 1,040円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">釜焼き焼豚 王様中華そば</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,130円</p>
+                                <p class="menuPriceItem">中 1,240円</p>
+                                <p class="menuPriceItem">大 1,350円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow">
+                            <p class="menuName">王様中華そば スペシャル</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 1,210円</p>
+                                <p class="menuPriceItem">中 1,320円</p>
+                                <p class="menuPriceItem">大 1,430円</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuItem">
+                        <h3 class="menuHead">松本の新ご当地らあめん</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">天ぷららあめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 850円</p>
+                                <p class="menuPriceItem">中 960円</p>
+                                <p class="menuPriceItem">大 1,070円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">天玉らあめん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">並 900円</p>
+                                <p class="menuPriceItem">中 1,010円</p>
+                                <p class="menuPriceItem">大 1,120円</p>
+                            </div>
+                        </div>
+                        <div class="menuItem">
+                            <div class="menuHead">
+                                <h3>学生らあめん</h3>
+                                <p class="menuHeadNotice">ご注文の際に学生証をご提示いただく場合があります</p>
+                            </div>
+                            <div class="menuItemRow pb0">
+                                <p class="menuName">学生らあめん（中 or 大）</p>
+                                <div class="menuPrice">
+                                    <p class="menuPriceItem">660円</p>
+                                </div>
+                            </div>
+                            <p class="menuNotice">トッピングサービス（※下記より一つお選びください）<br>細切りチャーシュー・ほうれん草・味玉・ピリ辛白髪ネギ・生ニラ</p>
+                        </div>
+                    </div>
+                    <div class="menuItem">
+                        <h3 class="menuHead">トッピング・替え玉</h3>
+                        <div class="menuItemRow borderBox">
+                            <div class="menuName">
+                                <p>生にら</p>
+                                <p>味玉ゆで</p>
+                                <p>のり（5枚）</p>
+                                <p>ピリ辛白髪ネギ</p>
+                                <p>ほうれん草</p>
+                                <p>ゆでキャベツ</p>
+                                <p>焼豚（1枚）</p>
+                                <p>メンマ</p>
+                                <p>野菜（小）</p>
+                            </div>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">各140円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">生キャベツ</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">70円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">野菜（大）</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">180円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">替え玉（太麺 or 細麺）</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">165円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">和え玉（ラーメンご注文の方　300円）</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">単品 550円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuItem row2">
+                        <h3 class="menuHead">ごはんもの・サイドメニュー</h3>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">唐揚げマヨ丼</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">小 450円</p>
+                                <p class="menuPriceItem">中 770円</p>
+                                <p class="menuPriceItem">大 900円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">餃子（6個）</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">550円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">エビマヨ</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">680円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">からあげ</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">3個 350円</p>
+                                <p class="menuPriceItem">5個 550円</p>
+                                <p class="menuPriceItem">7個 700円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">スパイシー山賊焼き</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">750円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">ニンニクニラチャーハン</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">小 550円</p>
+                                <p class="menuPriceItem">大 900円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">チャーハン</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">小 550円</p>
+                                <p class="menuPriceItem">大 800円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">ごはん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">小 110円</p>
+                                <p class="menuPriceItem">中 170円</p>
+                                <p class="menuPriceItem">大 230円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">肉コショウごはん</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">小 220円</p>
+                                <p class="menuPriceItem">中 340円</p>
+                                <p class="menuPriceItem">大 460円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">ねぎちゃメンマ</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">450円</p>
+                            </div>
+                        </div>
+                        <div class="menuItemRow borderBox">
+                            <p class="menuName">フライドポテト</p>
+                            <div class="menuPrice">
+                                <p class="menuPriceItem">400円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuItem notice">
+                        <p class="menuNotice">※メニュー内容・価格が異なる可能性があります。<br>※商品は全て税込表示です。</p>
+                    </div>
+                </div>
+                <div class="circle topLeft"></div>
+                <div class="circle topRight"></div>
+                <div class="circle bottomLeft"></div>
+                <div class="circle bottomRight"></div>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

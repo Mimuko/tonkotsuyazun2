@@ -1,0 +1,387 @@
+@use "base/variables" as v;
+
+/*--------------------------------
+	MENU
+--------------------------------*/
+
+.tileSection {
+    background: v.$btn-color;
+    position: relative;
+    z-index: 0;
+    height: 200px;
+    margin-top: 80px;
+    @media (min-width: 768px) {
+        margin-top: 160px;
+        height: 400px;
+    }
+}
+
+.tile {
+    max-width: 860px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tileItem {
+    max-width: 260px;
+    & .img {
+        width: 100%;
+    }
+}
+
+.overlayHeadEn {
+    display: inline-block;
+    font-size: 70px;
+    position: absolute;
+    top: auto;
+    bottom: -13px;
+    left: 0;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-weight: 600;
+    z-index: -1;
+    overflow: hidden;
+    line-height: 1;
+    color: #F8F8EE;
+    letter-spacing: -0.08em;
+    font-family: v.$alpha-font;
+    white-space: nowrap;
+    @media (min-width: 768px) {
+        font-size: 124px;
+        bottom: -30px;
+    }
+    @media (min-width: 1024px) {
+        bottom: -33px;
+        font-size: 170px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 230px;
+    }
+}
+
+.lunchSection {
+    margin-top: 116px;
+    & .sectionInr {
+        max-width: 1240px;
+        border: 4px solid v.$btn-color;
+        border-radius: 12px;
+        padding: 70px 0 40px;
+    }
+    & .sectionHead {
+        display: inline-block;
+        background: #F8F8EE;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -30px;
+        margin: auto;
+    }
+    & .sectionHeadDesc {
+        text-align: center;
+    }
+}
+
+.lunchMenu {
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lunchMenuName {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.lunchMenuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 95%;
+    @media (min-width: 768px) {
+        width: 80%;
+    }
+    @media (min-width: 1024px) {
+        width: auto;
+    }
+}
+
+.sideMenuItemInr {
+    background: v.$white-color;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    min-height: 75px;
+    @media (min-width: 768px) {
+        padding: 10px 15px;
+        min-height: 89px;
+    }
+}
+
+.sideMenuItemWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 20px;
+    width: 100%;
+    padding-top: 30px;
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
+    @media (min-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.sideMenuItem {
+    counter-increment: variation;
+    padding: 20px 10px;
+    position: relative;
+    border-radius: 4px;
+    width: 164px;
+    @media (min-width: 768px) {
+        /* width: 164px; */
+        padding: 30px 15px;
+    }
+    &::before {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        font-family: v.$alpha-font;
+        font-size: v.$font-size-m;
+        font-weight: 700;
+        line-height: 1;
+        content: counter(variation, upper-alpha);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.sideMenuItemPrice {
+    font-size: v.$font-size-m;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top: 16px;
+    &::after {
+        content: "円(税込)";
+        font-size: 18px;
+    }
+}
+
+.sideMenuItem01 {
+    background: #F5E34D;
+    &::before {
+        background: #F5E34D;
+    }
+}
+
+.sideMenuItem02 {
+    background: #F5C64D;
+    &::before {
+        background: #F5C64D;
+    }
+}
+
+.sideMenuItem03 {
+    background: #F5B24D;
+    &::before {
+        background: #F5B24D;
+    }
+}
+
+.sideMenuItemName {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.sideMenuItemNameSmall {
+    font-size: v.$font-size-s;
+}
+
+.menuSection {
+    padding: 80px 0 100px;
+    & .sectionInr {
+        max-width: 1240px;
+        background: v.$white-color;
+        border-radius: 12px;
+    }
+}
+
+.menu {
+    display: grid;
+    row-gap: 40px;
+    width: 95%;
+    max-width: v.$large-width;
+    margin: auto;
+    font-size: 16px;
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: minmax(40px, auto);
+        gap: 40px;
+    }
+    @media (min-width: 1440px) {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 530px));
+    }
+    &:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+}
+
+.menuItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1440px) {
+        max-width: 530px;
+    }
+    &>.menuItem {
+        margin-top: 20px;
+    }
+    &.notice {
+        padding-left: 0;
+        @media (min-width: 1024px) {
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;
+        }
+        & .menuNotice {
+            color: v.$black-color;
+            font-size: v.$font-size-s;
+        }
+    }
+    &.row2 {
+        @media (min-width: 1024px) {
+            grid-row: 4 / 7;
+        }
+    }
+}
+
+.menuHead {
+    width: 100%;
+    background: #EEEBCD;
+    padding: 3px 0 3px 10px;
+    line-height: 2;
+    @media (min-width: 1024px) {
+        padding: 3px 0 3px 20px;
+    }
+    &:has(h3) {
+        &>h3 {
+            line-height: 2;
+        }
+    }
+}
+
+.menuHeadNotice {
+    font-size: v.$font-size-s;
+}
+
+.menuItemRow {
+    padding: 10px 0 10px 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        padding: 20px 0 20px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        -moz-column-gap: 25px;
+        column-gap: 25px;
+    }
+    &.borderBox {
+        -webkit-border-after: 2px solid #EEEBCD;
+        border-block-end: 2px solid #EEEBCD;
+    }
+    &.pb0 {
+        padding-bottom: 0;
+    }
+}
+
+.menuPrice {
+    flex: 1;
+}
+
+.menuPriceItem {
+    white-space: nowrap;
+    font-size: 16px;
+    text-align: right;
+    &:not(:last-child) {
+        margin-bottom: 2px;
+    }
+}
+
+.menuNotice {
+    color: #868585;
+    font-size: v.$font-size-s;
+    line-height: 1.4;
+    padding-left: 10px;
+    letter-spacing: normal;
+    @media (min-width: 1024px) {
+        padding-left: 20px;
+    }
+}
+
+.circle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: v.$btn-color;
+    @media (min-width: 768px) {
+        width: 16px;
+        height: 16px;
+    }
+    &.topLeft {
+        top: 20px;
+        left: 20px;
+    }
+    &.topRight {
+        top: 20px;
+        right: 20px;
+    }
+    &.bottomLeft {
+        bottom: 20px;
+        left: 20px;
+    }
+    &.bottomRight {
+        bottom: 20px;
+        right: 20px;
+    }
+}

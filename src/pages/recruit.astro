@@ -1,0 +1,381 @@
+---
+import '../styles/base/_reset.scss';
+import '../styles/base/_variables.scss';
+import '../styles/header.scss';
+import '../styles/footer.scss';
+import '../styles/common.scss';
+import '../styles/recruit.scss';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "採用情報｜豚骨らあめん専門店 とんこつ家ZUN";
+const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1411" height="420" src={siteDomein + '20240708133029445576.png'} alt="採用情報" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">採用情報</h1>
+            </div>
+        </section>
+        <div class="firstView">
+            <div class="firstViewCopy">
+                <div class="firstViewCopyItem">
+                    <p>とんこつ家ZUNでは</p>
+                </div>
+                <div class="firstViewCopyItem">
+                    <p>現在従業員を</p>
+                </div>
+                <div class="firstViewCopyItem">
+                    <p>募集しております</p>
+                </div>
+            </div>
+            <div class="firstViewImg rightImg">
+                <img src={siteDomein + '20240709133407115646.png'} alt="" class="img" width="778" height="520">
+            </div>
+            <div class="firstViewImg leftImg">
+                <img src={siteDomein + '20240709133407798915.png'} alt="" class="img" width="778" height="520">
+            </div>
+        </div>
+        <div class="overlayHead">
+            <div class="overlayHeadGroup">
+                <p class="overlayHeadDesc">
+                    とんこつ家ZUNでは、一緒に働いてくれる仲間を募集しております。<br>
+                    <br>
+                    採用にあたり、学歴のほか経験の有無も一切不問です！<br>
+                    初めての方でも、丁寧に指導しますのでご安心ください。<br>
+                    <br>
+                    詳細は直接ご案内させていただきますので、少しでもご興味がございましたらお気軽にお問い合わせください。
+                </p>
+            </div>
+            <h2 class="overlayHeadEn">RECRUIT</h2>
+        </div>
+        <section class="section mainSection">
+            <div class="sectionInr">
+                <div class="flex">
+                    <div class="txtBox">
+                        <div class="sectionHead">
+                            <h3 class="sectionHeadTtl">自分のラーメン店をもちたい、やる気に満ち溢れた従業員を募集しています</h3>
+                            <p class="sectionHeadDesc">Recruit 01</p>
+                        </div>
+                        <p class="txt">
+                            とんこつ家ZUNでは、自分のラーメン店を持ちたいという夢を持ち、やる気に満ち溢れた従業員も募集しています。<br>
+                            情熱を持ってラーメン作りに取り組み、将来的に自分のお店を開業したいと考えている方にとって、理想的な環境が整っています。<br>
+                            ラーメンの調理技術や店舗運営のノウハウを一から学べる場を提供しています。<br>
+                            夢を実現するための第一歩を、とんこつ家ZUNで踏み出してみませんか？積極的なご応募をお待ちしています。
+                        </p>
+                        <div class="txtBoxImg">
+                            <img src={siteDomein + '20240708144010795995.png'} alt="提供しているお料理のイメージ画像" class="img" width="453" height="143">
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <img src={siteDomein + '20240708144010872685.png'} alt="店内のイメージ画像" class="img" width="550" height="556">
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="txtBox">
+                        <div class="sectionHead">
+                            <h3 class="sectionHeadTtl">長時間働ける環境で稼ぎたい人は稼げます</h3>
+                            <p class="sectionHeadDesc">Recruit 02</p>
+                        </div>
+                        <p class="txt">
+                            とんこつ家ZUNでは、長時間働ける環境で稼ぎたいと考えている方を歓迎しています。<br>
+                            とんこつ家ZUNでやる気と元気さえあれば、しっかりと稼げる職場です。<br>
+                            長時間の勤務が可能な方には、豊富なシフトや業務内容を提供し、その分高い収入を得るチャンスがあります。<br>
+                            ラーメン作りのスキルを学びながら、安定した収入を確保することができます。<br>
+                            努力次第でしっかりと稼げる環境を整えており、成長と成功を目指すあなたを全力でサポートします。
+                        </p>
+                        <div class="txtBoxImg">
+                            <img src={siteDomein + '20240708144010562385.png'} alt="働いている従業員のイメージ画像" class="img" width="453" height="143">
+                        </div>
+                    </div>
+                    <div class="imgBox">
+                        <img src={siteDomein + '20240708144010101640.png'} alt="働いている従業員のイメージ画像" class="img" width="550" height="556">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionApplication">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionHeadTtl">募集要項</h2>
+                    <p class="sectionHeadDesc">Application Requirements</p>
+                </div>
+                <div class="table">
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">お仕事の内容</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">オーダー取り・料理や飲み物の提供・ドリンク作り・レジ対応・後片付けなど、ホール業務全般や洗い物などをお任せします。</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">雇用形態</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">社員・パート</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">応募資格</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">やる気と元気</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">就業時間</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">11:30～26:00</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">勤務地</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">長野県松本市中央1-2-16 1F</p>
+                        </div>
+                    </div>
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">待遇・福利厚生</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">◆制服貸与</p>
+                        </div>
+                    </div>
+
+                    <div class="tableItem">
+                        <div class="tableHead">
+                            <p class="txt">応募方法</p>
+                        </div>
+                        <div class="tableBody">
+                            <p class="txt">エントリーフォームからご応募いただくか、<br>下記の電話番号までお気軽にお問い合わせください。</p>
+                            <div class="btns">
+                                <a href="tel:0263878839" class="telLink">
+                                    <img src={siteDomein + '20240709092421160571.png'} alt="電話アイコン画像" width="26" height="26" class="img">
+                                    <p class="telLinkTxt">0263-87-8839</p>
+                                </a>
+                                <div class="normalBtnWrap">
+                                    <a href="#entry" class="normalBtn">
+                                        <p class="normalBtnTxt">エントリーフォーム</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sectionEntry" id="entry">
+            <div class="sectionInr">
+                <div class="sectionHead">
+                    <h2 class="sectionHeadTtl">エントリーフォーム</h2>
+                    <p class="sectionHeadDesc">Entry Form</p>
+                </div>
+                <form method="post" action="./send" class="form formWrap page-contact" data-formtype="2">
+                    <div class="item">
+                        <div class="l-tit">
+                            <label for="name" class="tit">お名前</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="お名前を入力してください" id="name" name="name" type="text" data-prompt-position="topLeft" class="desc validateRequired validate-required-" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="l-tit">
+                            <label for="kana" class="tit">ふりがな</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="ふりがなを入力してください" id="kana" name="kana" type="text" data-displaynameattr="お名前　ふりがな" data-prompt-position="topLeft" class="input formInput validateHiragana1" />
+                        </div>
+                    </div>
+                    <div class="item mail">
+                        <div class="l-tit">
+                            <label for="mail" class="tit">メールアドレス</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="メールアドレスを入力してください" type="email" id="mail" name="mail" data-prompt-position="topLeft" class="desc validateEmail validate-required-custom-email-" />
+                        </div>
+                    </div>
+                    <div class="item address item-start">
+                        <div class="l-tit">
+                            <label for="tel" class="tit">住所</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <div class="fieldset num">
+                                <label class="addressLabel zipMark">〒</label>
+                                <input id="postcode1" name="zip1" maxlength="3" type="tel" data-prompt-position="topLeft" class="validateRequired validate-required-" />
+                                -
+                                <input id="postcode2" name="zip2" maxlength="4" type="tel" data-prompt-position="topLeft" class="validateRequired validate-required-" />
+                            </div>
+                            <div class="fieldset flex">
+                                <label class="addressLabel">都道府県</label>
+                                <select id="address1" name="pref" data-displaynameattr="都道府県" data-prompt-position="topLeft" class="validateRequired validate-required-">
+                                    <option value="" selected="" data-prompt-position="topLeft" class="validateRequired validate-required-">選択してください </option>
+                                    <option value="北海道">北海道</option>
+                                    <option value="青森県">青森県</option>
+                                    <option value="岩手県">岩手県</option>
+                                    <option value="宮城県">宮城県</option>
+                                    <option value="秋田県">秋田県</option>
+                                    <option value="山形県">山形県</option>
+                                    <option value="福島県">福島県</option>
+                                    <option value="茨城県">茨城県</option>
+                                    <option value="栃木県">栃木県</option>
+                                    <option value="群馬県">群馬県</option>
+                                    <option value="埼玉県">埼玉県</option>
+                                    <option value="千葉県">千葉県</option>
+                                    <option value="東京都">東京都</option>
+                                    <option value="神奈川県">神奈川県</option>
+                                    <option value="新潟県">新潟県</option>
+                                    <option value="富山県">富山県</option>
+                                    <option value="石川県">石川県</option>
+                                    <option value="福井県">福井県</option>
+                                    <option value="山梨県">山梨県</option>
+                                    <option value="長野県">長野県</option>
+                                    <option value="岐阜県">岐阜県</option>
+                                    <option value="静岡県">静岡県</option>
+                                    <option value="愛知県">愛知県</option>
+                                    <option value="三重県">三重県</option>
+                                    <option value="滋賀県">滋賀県</option>
+                                    <option value="京都府">京都府</option>
+                                    <option value="大阪府">大阪府</option>
+                                    <option value="兵庫県">兵庫県</option>
+                                    <option value="奈良県">奈良県</option>
+                                    <option value="和歌山県">和歌山県</option>
+                                    <option value="鳥取県">鳥取県</option>
+                                    <option value="島根県">島根県</option>
+                                    <option value="岡山県">岡山県</option>
+                                    <option value="広島県">広島県</option>
+                                    <option value="山口県">山口県</option>
+                                    <option value="徳島県">徳島県</option>
+                                    <option value="香川県">香川県</option>
+                                    <option value="愛媛県">愛媛県</option>
+                                    <option value="高知県">高知県</option>
+                                    <option value="福岡県">福岡県</option>
+                                    <option value="佐賀県">佐賀県</option>
+                                    <option value="長崎県">長崎県</option>
+                                    <option value="熊本県">熊本県</option>
+                                    <option value="大分県">大分県</option>
+                                    <option value="宮崎県">宮崎県</option>
+                                    <option value="鹿児島県">鹿児島県</option>
+                                    <option value="沖縄県">沖縄県 </option>
+                                </select>
+                            </div>
+                            <div class="fieldset flex">
+                                <label class="addressLabel">市区町村</label>
+                                <input id="address2" name="city" type="text" data-prompt-position="topLeft" class="validateRequired validate-required-" />
+                            </div>
+                            <div class="fieldset flex">
+                                <label class="addressLabel">番地以降</label>
+                                <input id="address3" name="add" type="text" data-prompt-position="topLeft" class="validateRequired validate-required-" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item tell">
+                        <div class="l-tit">
+                            <label for="tel" class="tit">お電話番号</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="00-0000-0000" id="tel" name="tel" type="text" class="desc validatePhone1" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="l-tit">
+                            <label class="tit">性別</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <div class="radioArea">
+                                <div class="radioFlex">
+                                    <input type="radio" name="sex" value="男性" id="sex1" class="radio validateRequired" />
+                                    <label for="sex1" class="checkbox-label labelText02">男性</label>
+                                </div>
+                                <div class="radioFlex">
+                                    <input type="radio" name="sex" value="女性" id="sex2" class="radio" />
+                                    <label for="sex2" class="checkbox-label labelText02">女性</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="l-tit">
+                            <label for="msg" class="tit">年齢（応募時点）</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <input placeholder="年齢（応募時点）を入力してください" id="age" name="age" type="text" data-displaynameattr="年齢" class="input formInput validateRequired" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="l-tit">
+                            <label class="tit">現在の就業状況</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <div class="radioArea">
+                                <div class="radioFlex">
+                                    <input type="radio" name="content" value="就業中" data-displaynameattr="現在の状況" id="price" class="radio formRadio" />
+                                    <label for="price" class="label labelText02">就業中</label>
+                                </div>
+                                <div class="radioFlex">
+                                    <input type="radio" name="content" value="就業していない" data-displaynameattr="現在の状況" id="item" class="radio formRadio validateRequired" />
+                                    <label for="item" class="label labelText02">就業していない</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item flex-start">
+                        <div class="l-tit">
+                            <label for="msg" class="tit">ご希望やご質問内容</label>
+                            <p class="indispensable">必須</p>
+                        </div>
+                        <div class="l-desc">
+                            <textarea id="msg" name="ご希望やご質問内容" data-prompt-position="topLeft" class="desc validateRequired validate-required-"></textarea>
+                        </div>
+                    </div>
+                    <div class="l-privacy-checked">
+                            <input type="checkbox" name="privacy" data-displaynameattr="プライバシーポリシーの同意" value="同意しました。" id="checkbox" data-prompt-position="topLeft" class="tit validateRequired validate-required-" />
+                            <label for="checkbox" class="desc">「<a href="#">プライバシーポリシー</a>」<br class="sp" />に同意します</label>
+                        </div>
+                    <div id="policy" class="btn__box con">
+                        <button id="submit" type="submit" disabled="" class="btn__box-link bg__black-link">送信する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+---
+import '../styles/base/_reset.scss';
+import '../styles/base/_variables.scss';
+import '../styles/header.scss';
+import '../styles/footer.scss';
+import '../styles/common.scss';
+import '../styles/commitment.scss';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "こだわり｜豚骨らあめん専門店 とんこつ家ZUN";
+const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+        <section class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1411" height="420" src={siteDomein + '20240708133029536736.png'} alt="こだわり" class="pageHeaderImg" width="1440" height="450" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">こだわり</h1>
+            </div>
+        </section>
+        <div class="section commitmentSection">
+            <div class="sectionInr">
+                <section class="flex">
+                    <div class="imgBox numberCount">
+                        <img src={siteDomein + '20240708133151463662.png'} alt="店舗の外観写真" width="550" height="560" class="img">
+                    </div>
+                    <div class="txtBox">
+                        <div class="sectionHead">
+                            <h2 class="sectionHeadTtl">JR松本駅近く、多彩な家系ラーメンとご当地の逸品</h2>
+                            <p class="sectionHeadDesc">Commitment 01</p>
+                        </div>
+                        <p class="txt">
+                            JR松本駅近くにあるとんこつ家ZUNでは、多彩な家系ラーメンとご当地の逸品をお楽しみいただけます。<br>
+                            濃厚な家系ラーメンや、風味豊かな豚骨味噌ラーメン、そして豚骨魚介つけめんなど、バラエティ豊かなメニューが揃っています。<br>
+                            また、ご当地ラーメンの「王様中華そば」も用意しており、地元の味を堪能することができます。<br>
+                            ラーメン好きの方にとって、訪れるたびに新しい味との出会いが楽しめる場所です。
+                        </p>
+                    </div>
+                </section>
+                <section class="flex">
+                    <div class="imgBox numberCount">
+                        <img src={siteDomein + '20240708133151114632.png'} alt="店舗の外観写真" width="550" height="560" class="img">
+                    </div>
+                    <div class="txtBox">
+                        <div class="sectionHead">
+                            <h2 class="sectionHeadTtl">長野県のご当地ラーメン<br class="spHidden">「王様中華そば」をご賞味ください</h2>
+                            <p class="sectionHeadDesc">Commitment 02</p>
+                        </div>
+                        <p class="txt">
+                            JR松本駅近くにあるとんこつ家ZUNでは、多彩な家系ラーメンとご当地の逸品をお楽しみいただけます。<br>
+                            濃厚な家系ラーメンや、風味豊かな豚骨味噌ラーメン、そして豚骨魚介つけめんなど、バラエティ豊かなメニューが揃っています。<br>
+                            また、ご当地ラーメンの「王様中華そば」も用意しており、地元の味を堪能することができます。<br>
+                            ラーメン好きの方にとって、訪れるたびに新しい味との出会いが楽しめる場所です。
+                        </p>
+                    </div>
+                </section>
+                <section class="flex">
+                    <div class="imgBox numberCount">
+                        <img src={siteDomein + '20240708133151982454.png'} alt="店舗の外観写真" width="550" height="560" class="img">
+                    </div>
+                    <div class="txtBox">
+                        <div class="sectionHead">
+                            <h2 class="sectionHeadTtl">多彩なサイドメニュー</h2>
+                            <p class="sectionHeadDesc">Commitment 03</p>
+                        </div>
+                        <p class="txt">
+                            とんこつ家ZUNでは、ラーメンだけでなく多彩なサイドメニューも自慢です。<br>
+                            唐揚げマヨ丼やジューシーな餃子、クリーミーなエビマヨ、サクサクのからあげ、ピリ辛がクセになるスパイシー山賊焼きなど、豊富なラインナップを用意しております。<br>
+                            また、香ばしいニンニクニラチャーハンも絶品で、ラーメンとの相性抜群です。<br>
+                            これらのサイドメニューは、ラーメンの美味しさを一層引き立て、食事全体の満足感を高めます。<br>
+                            ぜひ、とんこつ家ZUNでラーメンと一緒にサイドメニューを楽しんでください。
+                        </p>
+                    </div>
+                </section>
+                <section class="flex">
+                    <div class="imgBox numberCount">
+                        <img src={siteDomein + '20240708133151706841.png'} alt="店舗の外観写真" width="550" height="560" class="img">
+                    </div>
+                    <div class="txtBox">
+                        <div class="sectionHead">
+                            <h2 class="sectionHeadTtl">とんこつ家ZUNの<br>人気サイドメニューエビマヨ</h2>
+                            <p class="sectionHeadDesc">Commitment 04</p>
+                        </div>
+                        <p class="txt">
+                            とんこつ家ZUNの人気商品、エビマヨは一度食べたら忘れられない一品です。<br>
+                            プリプリのエビをカリッと揚げ、特製のクリーミーなマヨソースで絡めた絶品料理です。<br>
+                            ソースの甘みと酸味がエビの旨味を引き立て、一口食べるごとに広がる豊かな風味がクセになります。<br>
+                            ラーメンとの相性も抜群で、さっぱりとしたラーメンのスープとの組み合わせが食欲をさらにそそります。<br>
+                            ぜひ、とんこつ家ZUNにお越しの際は、このエビマヨをお試しください。
+                        </p>
+                    </div>
+                </section>
+                <section class="flex">
+                    <div class="imgBox numberCount">
+                        <img src={siteDomein + '20240708133151811652.png'} alt="店舗の外観写真" width="550" height="560" class="img">
+                    </div>
+                    <div class="txtBox">
+                        <div class="sectionHead">
+                            <h2 class="sectionHeadTtl">お酒もしっかり飲めるラーメン屋</h2>
+                            <p class="sectionHeadDesc">Commitment 05</p>
+                        </div>
+                        <p class="txt">
+                            とんこつ家ZUNは、ラーメンだけでなく、お酒もしっかり楽しめるラーメン屋です。<br>
+                            焼酎やハイボール、ビールなど、多種多様なドリンクメニューを用意しており、ラーメンとの相性も抜群です。<br>
+                            仕事帰りの一杯や、友人との楽しいひとときに最適な環境が整っています。<br>
+                            <br>
+                            美味しいラーメンを味わいながら、お酒も一緒に楽しむことで、至福の時間をお過ごしいただけます。
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

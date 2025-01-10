@@ -1,0 +1,41 @@
+@use "base/variables" as v;
+
+/*=================================================*/
+
+
+/*送信完了ページ
+/*=================================================*/
+
+.wrap {
+    background: #EEEBCD;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: v.$black-color;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sendSection {
+    & .normalBtnWrap {
+        margin: 40px auto 0;
+    }
+    & .txt {
+        text-align: left;
+        color: v.$black-color;
+        @media (min-width: 1024px) {
+            text-align: center;
+        }
+    }
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+p.red-button.guidance:hover {
+    transition: 0.4s;
+    color: #68401B;
+}

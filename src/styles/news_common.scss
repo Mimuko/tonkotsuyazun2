@@ -1,0 +1,328 @@
+@use "base/variables" as v;
+a:hover {
+    color: initial;
+}
+
+.l-blogPage {
+    padding: 50px 0 0;
+    @media (min-width: 1000px) {
+        padding: 80px 0 0;
+    }
+}
+
+.blogInner {
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.blogPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width: 1000px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        -moz-column-gap: 80px;
+        column-gap: 80px;
+    }
+}
+
+.mainBlock {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 1000px) {
+        margin: 0;
+    }
+    .article & {
+        /* 詳細ページ */
+        background: v.$white-color;
+        border: 1px solid #9F9F9F;
+        border-radius: 4px;
+    }
+}
+
+.rightBlock {
+    width: 100%;
+    margin: 40px 0;
+    @media (min-width: 1000px) {
+        max-width: initial;
+        max-width: 200px;
+        margin: 0;
+    }
+    & .webgene-blog {
+        width: inherit;
+        display: block;
+    }
+}
+
+.blog,
+.cf {
+    width: 100%;
+    margin: 0 auto 40px;
+    transition: 0.3s;
+    @media (min-width: 1000px) {
+        width: 260px;
+        margin: 0 0 66px;
+    }
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.webgene-item-main-image {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: auto;
+    min-height: 250px;
+    @media (min-width: 1000px) {
+        min-height: initial;
+        height: 180px;
+    }
+}
+
+.blogTag {
+    color: v.$white-color;
+    background: v.$news-color;
+    padding: 4px 20px 4px 21px;
+    font-size: v.$font-size-s;
+    display: inline-block;
+    @media (min-width: 1000px) {
+        font-size: 16px;
+    }
+}
+
+.worksBody {
+    background: v.$white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    overflow: hidden;
+    & .blogTit {
+        padding-top: 7px;
+        margin-left: 13px;
+        padding-bottom: 11px;
+        @media (min-width: 1000px) {
+            font-size: 16px;
+            min-height: 74px;
+        }
+    }
+}
+
+.worksTopLink {
+    & .blogTag {
+        margin-bottom: 22px;
+        box-shadow: 0px 4px 4px 0px #0000001A;
+    }
+}
+
+.worksImgBox {
+    & .webgene-item-main-image {
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: auto;
+        min-height: 250px;
+        @media (min-width: 1000px) {
+            min-height: initial;
+            height: 180px;
+        }
+    }
+}
+
+.webgene-blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    &:has(.article) {
+        display: block;
+        padding: 40px 40px 55px;
+    }
+}
+
+.blogDate {
+    color: rgb(68, 48, 11);
+    margin-left: 13px;
+    text-align: left;
+    padding: 8px 0 0;
+    font-size: 16px;
+}
+
+.l-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 23px;
+    margin-bottom: 33px;
+}
+
+.blogTit {
+    font-size: 18px;
+    color: v.$black-color;
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+    .worksContentsLink & {
+        font-size: 16px;
+        color: v.$black-color;
+    }
+}
+
+.category-h2 {
+    color: v.$white-color;
+    background: v.$news-color;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    font-size: v.$font-size-s;
+    &.mt-3 {
+        margin: 20px auto;
+        @media (min-width: 769px) {
+            margin: 51px auto 23px!important;
+        }
+    }
+}
+
+.webgene-item.mt-2 a {
+    display: block;
+    padding-left: 20px;
+    &:hover {
+        color: v.$white-color;
+        background: v.$news-color;
+    }
+}
+
+.webgene-pagination {
+    width: 100%;
+    & ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        @media (min-width: 769px) {
+            margin-top: 6px;
+        }
+    }
+    & .next a,
+    & .prev a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0 5px;
+        display: none;
+    }
+}
+
+.number {
+    background: v.$white-color;
+    border: 1px solid v.$news-color;
+    transition: 0.3s;
+    margin: 5px 5px 80px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    @media (min-width: 769px) {
+        margin: 0 0 140px 10px;
+    }
+    &:hover {
+        background: v.$news-color;
+        opacity: 0.6;
+        & a {
+            color: v.$white-color;
+        }
+    }
+    & a {
+        color: v.$news-color;
+        display: inline-block;
+        padding: 10px 18px;
+        transition: 0.3s;
+        text-decoration: none;
+        @media (min-width: 1000px) {
+            font-size: 20px;
+        }
+    }
+    &.selected {
+        background: v.$news-color;
+        & a {
+            color: v.$white-color;
+        }
+    }
+}
+
+
+/**********メインブロックのスタイル*********/
+
+.webgene-item-main-image {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    @media (min-width: 1025px) {
+        height: 420px;
+    }
+}
+
+.archiveCategory {
+    margin-bottom: 26px;
+    & .blogDate {
+        text-align: left;
+        color: v.$news-color;
+        white-space: nowrap;
+        @media (min-width: 768px) {
+            font-size: v.$font-size-s;
+        }
+    }
+}
+
+.blog-text p {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    @media (min-width: 768px) {
+        font-size: 16px;
+        padding-top: 33px;
+    }
+}
+
+
+/* ボタン */
+
+.btn__box {
+    display: flex;
+    justify-content: center;
+    padding: 0 6%;
+    width: 100%;
+    margin: 60px 0 80px;
+    @media (min-width: 780px) {
+        min-width: 700px;
+        margin: 60px 0 140px;
+    }
+    @media (min-width: 1000px) {
+        width: 75.091%;
+    }
+}
+
+.linkBtnWrap {
+    background: v.$news-color;
+    width: 240px;
+    & .normalBtn {
+        &::before,
+        &::after {
+            content: none;
+        }
+    }
+}
+
+.normalBtnTxt {
+    color: v.$white-color;
+    font-size: 15px;
+    font-weight: 500;
+}

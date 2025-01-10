@@ -1,0 +1,152 @@
+---
+import '../styles/base/_reset.scss';
+import '../styles/base/_variables.scss';
+import '../styles/header.scss';
+import '../styles/footer.scss';
+import '../styles/common.scss';
+import '../styles/shop.scss';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "店舗情報｜豚骨らあめん専門店 とんこつ家ZUN";
+const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <main class="content">
+		<section class="pageHeader">
+			<div class="pageHeaderBg">
+				<img width="1440" height="450" src={siteDomein + '20240708144010795995.png'} alt="店舗情報" class="pageHeaderImg" width="1440" height="450" />
+			</div>
+			<div class="pageHeaderGroup">
+				<h1 class="pageHeaderFront">店舗情報</h1>
+			</div>
+		</section>
+		<section class="section shopSection">
+			<div class="sectionInr">
+				<div class="shopRow">
+					<div class="googleMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.2912882615115!2d137.9630508118132!3d36.232417399383884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d0e89466d125b%3A0x1b4d32a6b8595688!2z44Go44KT44GT44Gk5a62enVu!5e0!3m2!1sja!2sjp!4v1736480924469!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="shopInfo">
+						<div class="shopInfoItem shopInfoItemLogo">
+							<img src={siteDomein + '20240705165313940668.png'} alt="とんこつ家ZUN ロゴ画像" width="230" height="110" class="img" />
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">住所</p>
+							<p class="txt">長野県松本市中央1-2-16 1F</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">最寄り駅</p>
+							<p class="txt">JR大糸線 松本駅より徒歩約3分</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">TEL</p>
+							<a href="tel:0263878839" class="link">
+								<p class="txt">0263-87-8839</p>
+							</a>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">営業時間</p>
+							<p class="txt">11:30～26:00<br>※深夜料金は通常料金に15%増しで頂いております</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">定休日</p>
+							<p class="txt">不定休</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">駐車場</p>
+							<p class="txt">近隣のコインパーキングをご利用ください</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">支払い方法</p>
+							<p class="txt lsAdjust">現金・クレジットカード・PayPay等のQR決済サービス</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">座席</p>
+							<p class="txt">25席（カウンタ―、通常テーブル、4名様用ボックステーブル）</p>
+						</div>
+						<div class="shopInfoItem">
+							<p class="txt shopInfoItemHead">禁煙・喫煙</p>
+							<p class="txt">禁煙</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<aside class="section tileSection">
+			<div class="tile">
+				<div class="tileItem">
+					<img src={siteDomein + '20240708144010485695.png'} alt="提供しているお料理のイメージ画像" class="img" width="375" height="281">
+				</div>
+				<div class="tileItem">
+					<img src={siteDomein + '20240708144010831900.png'} alt="提供しているお料理のイメージ画像" class="img" width="375" height="281">
+				</div>
+				<div class="tileItem">
+					<img src={siteDomein + '20240708144010826696.png'} alt="提供しているお料理のイメージ画像" class="img" width="375" height="281">
+				</div>
+				<div class="tileItem">
+					<img src={siteDomein + '20240708144010662146.png'} alt="提供しているお料理のイメージ画像" class="img" width="375" height="281">
+				</div>
+				<div class="tileItem">
+					<img src={siteDomein + '20240708144010489076.png'} alt="提供しているお料理のイメージ画像" class="img" width="375" height="281">
+				</div>
+				<div class="tileItem">
+					<img src={siteDomein + '20240708144010786213.png'} alt="提供しているお料理のイメージ画像" class="img" width="375" height="281">
+				</div>
+
+			</div>
+		</aside>
+
+		<section class="section sectionBg companySection">
+			<div class="sectionBgImg">
+				<img src={siteDomein + '20240709171610198229.png'} alt="背景用の画像" width="1440" height="447" class="img" />
+			</div>
+			<div class="sectionInr">
+				<div class="sectionHead">
+					<h2 class="sectionHeadTtl">
+						運営会社
+					</h2>
+					<p class="sectionHeadDesc">Company</p>
+				</div>
+				<div class="data">
+					<div class="dataItem">
+						<p class="dataItemHead">名称</p>
+						<p class="txt">豚骨らあめん専門店 とんこつ家ZUN</p>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">住所</p>
+						<p class="txt">長野県松本市中央1-2-16 1F</p>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">TEL</p>
+						<a href="tel:0263878839">
+							<p class="txt">0263-87-8839</p>
+						</a>
+					</div>
+					<div class="dataItem">
+						<p class="dataItemHead">代表</p>
+						<p class="txt">上條裕樹</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@use "base/variables" as v;
+.contact__inner {
+    border: 1px solid #BE9A19;
+    padding: 50px 15px;
+    margin: 70px auto;
+    background: v.$white-color;
+    @media (min-width: 768px) {
+        padding: 100px 90px;
+        margin: 140px auto;
+    }
+}
+
+.matomo_link {
+    display: block;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+
+.tel {
+    font-size: initial;
+    display: block;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+
+.block {
+    margin-bottom: 24px;
+}
+
+.h2 {
+    color: #BE9A19;
+    font-weight: 500;
+}
+
+.txt {
+    font-size: v.$font-size-s;
+}

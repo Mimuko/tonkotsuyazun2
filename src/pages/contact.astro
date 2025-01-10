@@ -1,0 +1,104 @@
+---
+import '../styles/base/_reset.scss';
+import '../styles/base/_variables.scss';
+import '../styles/header.scss';
+import '../styles/footer.scss';
+import '../styles/common.scss';
+import '../styles/contact.scss';
+
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Head from '../components/head.astro';
+
+
+const pageTitle = "お問い合わせ｜豚骨らあめん専門店 とんこつ家ZUN";
+const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<Head />
+	<title>{pageTitle}</title>
+</head>
+
+<body class="wrap">
+	<Header />
+    <div class="content main">
+        <div class="pageHeader">
+            <div class="pageHeaderBg">
+                <img width="1440" height="437" src={siteDomein + '20240708133029342480.png'} alt="お問い合わせ" class="pageHeaderImg" />
+            </div>
+            <div class="pageHeaderGroup">
+                <h1 class="pageHeaderFront">お問い合わせ</h1>
+            </div>
+        </div>
+        <div class="section contact__wrap top_separator">
+            <div class="sectionInr contact__inner">
+                <div class="lead__box">
+                    <p class="lead__box-text">
+                        ■お問い合わせの際は「
+                        <a href="#" class="lead__box-link" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>」をお読みになり、同意のうえご記入ください。
+                    </p>
+                    <p class="lead__box-text">
+                        ■返信メールをお受け取りいただけるよう、受信設定（迷惑メール設定）等をお確かめください。
+                    </p>
+                    <p class="lead__box-text">
+                        ■万一、こちらから返信がない場合は、大変お手数ですが再度ご連絡ください。
+                    </p>
+                </div>
+                <form method="post" action="#" data-formtype="1" class="form formWrap page-contact">
+                    <div>
+                        <div class="item">
+                            <div class="l-tit">
+                                <label for="name" class="tit">お名前</label>
+                            </div>
+                            <div class="l-desc">
+                                <input placeholder="お名前を入力してください" id="name" name="name" type="text" class="desc validateRequired" />
+                            </div>
+                        </div>
+                        <div class="item mail">
+                            <div class="l-tit">
+                                <label for="mail" class="tit">メールアドレス</label>
+                            </div>
+                            <div class="l-desc">
+                                <input placeholder="メールアドレスを入力してください" type="email" id="mail" name="mail" class="desc validateEmail" />
+                            </div>
+                        </div>
+                        <div class="item tell">
+                            <div class="l-tit">
+                                <label for="tel" class="tit">お電話番号</label>
+                            </div>
+                            <div class="l-desc">
+                                <input placeholder="00-0000-0000" id="tel" name="tel" type="text" class="desc validatePhone1" />
+                            </div>
+                        </div>
+                        <div class="item content">
+                            <div class="l-tit">
+                                <label for="msg" class="tit">お問い合わせ内容</label>
+                            </div>
+                            <div class="l-desc">
+                                <textarea id="msg" name="msg" class="desc validateRequired"></textarea>
+                            </div>
+                        </div>
+                        <div class="l-privacy-checked">
+                            <input type="checkbox" name="privacy" data-displaynameattr="プライバシーポリシーの同意" value="同意しました。" id="privacyCheck" class="tit validateRequired" />
+                            <label for="privacyCheck" class="desc">「<a href="./privacy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>」<br class="sp" />に同意します</label>
+                        </div>
+                        <div class="btn__box con">
+                            <button id="submit" type="submit" disabled="" class="btn__box-link bg__black-link">
+                                送信する
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+	<Footer />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

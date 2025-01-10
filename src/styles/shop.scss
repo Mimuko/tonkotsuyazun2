@@ -1,0 +1,212 @@
+@use "base/variables" as v;
+
+/*--------------------------------
+	SHOP
+--------------------------------*/
+
+.commonFooter {
+    & .shopSection {
+        display: none;
+    }
+}
+
+.shopSection {
+    background: transparent;
+    margin-bottom: 0;
+    @media (min-width: 1024px) {
+        margin-bottom: 126px;
+    }
+}
+
+.shopRow {
+    flex-direction: column-reverse;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        -moz-column-gap: 70px;
+        column-gap: 70px;
+    }
+}
+
+.shopInfo {
+    width: 100%;
+    color: v.$black-color;
+    @media (min-width: 1024px) {
+        margin: 0;
+        flex: 1;
+    }
+}
+
+.shopLogo {
+    text-align: center;
+    margin-bottom: 22px;
+    @media (min-width: 1024px) {
+        text-align: left;
+    }
+}
+
+.shopInfoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #BDB994;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: v.$font-size-s;
+    text-align: center;
+    @media (min-width: 768px) {
+        text-align: left;
+        flex-direction: row;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    & .txt {
+        flex: 1;
+    }
+    &:has(.img) {
+        border: none;
+    }
+    &:not(:last-of-type) {
+        margin-bottom: 8px;
+    }
+}
+
+.shopInfoItemHead {
+    @media (min-width: 1024px) {
+        max-width: 75px;
+        width: 100%;
+    }
+}
+
+.shopImg {
+    @media (min-width: 1024px) {
+        max-width: 441px;
+    }
+    & .img {
+        width: 100%;
+    }
+}
+
+.tileSection {
+    background: v.$btn-color;
+    position: relative;
+    z-index: 0;
+    height: 200px;
+    @media (min-width: 768px) {
+        height: 400px;
+    }
+    @media (min-width: 1024px) {
+        height: 500px;
+    }
+    @media (min-width: 1440px) {
+        height: 650px;
+    }
+}
+
+.tile {
+    max-width: 1240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        -moz-column-gap: 10px;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        -moz-column-gap: 56px;
+        column-gap: 56px;
+        row-gap: 42px;
+    }
+}
+
+.tileItem {
+    max-width: 375px;
+    & .img {
+        width: 100%;
+    }
+}
+
+.companySection {
+    & .sectionHeadTtl,
+    & .sectionHeadDesc {
+        color: v.$white-color;
+    }
+}
+
+.data {
+    width: 95%;
+    max-width: 712px;
+    margin: 0 auto;
+    color: v.$white-color;
+    @media (min-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.dataItem {
+    border-bottom: 1px solid #C5B68F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 12px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    &:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+    @media (min-width: 768px) {
+        -moz-column-gap: 144px;
+        column-gap: 144px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.dataItemHead {
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    @media (min-width: 768px) {
+        text-align: left;
+        max-width: 34px;
+    }
+}
+
+.footer {
+    margin-top: 0;
+}
+
+.map {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    @media (min-width: 1024px) {
+        height: 450px;
+        margin-bottom: 80px;
+    }
+    & div {
+        width: 100%;
+        height: 100%;
+        & iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

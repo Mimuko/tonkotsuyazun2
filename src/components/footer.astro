@@ -1,0 +1,149 @@
+---
+const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+---
+<div class="commonFooter">
+    <div class="shopSection">
+        <div class="sectionInr">
+            <div class="sectionHead">
+                <h2 class="sectionHeadTtl">店舗情報</h2>
+                <p class="sectionHeadDesc">Shop</p>
+            </div>
+            <div class="shopRow">
+                <div class="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.2912882615115!2d137.9630508118132!3d36.232417399383884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d0e89466d125b%3A0x1b4d32a6b8595688!2z44Go44KT44GT44Gk5a62enVu!5e0!3m2!1sja!2sjp!4v1736480924469!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="shopInfo">
+                    <div class="shopInfoItem shopInfoItemLogo">
+                        <img src={siteDomein + '20240705165313940668.png'} alt="とんこつ家ZUN ロゴ画像" width="230" height="110" class="img" />
+                    </div>
+                    <div class="shopInfoItem">
+                        <p class="txt shopInfoItemHead">住所</p>
+                        <p class="txt">長野県松本市中央1-2-16 1F</p>
+                    </div>
+                    <div class="shopInfoItem">
+                        <p class="txt shopInfoItemHead">最寄り駅</p>
+                        <p class="txt">JR大糸線 松本駅より徒歩約3分</p>
+                    </div>
+                    <div class="shopInfoItem">
+                        <p class="txt shopInfoItemHead">TEL</p>
+                        <a href="tel:0263878839" class="link">
+                            <p class="txt">0263-87-8839</p>
+                        </a>
+                    </div>
+                    <div class="shopInfoItem">
+                        <p class="txt shopInfoItemHead">営業時間</p>
+                        <p class="txt">11:30～26:00<br>※深夜料金は通常料金に15%増しで頂いております</p>
+                    </div>
+                    <div class="shopInfoItem">
+                        <p class="txt shopInfoItemHead">定休日</p>
+                        <p class="txt">不定休</p>
+                    </div>
+                    <div class="shopInfoItem">
+                        <p class="txt shopInfoItemHead">駐車場</p>
+                        <p class="txt">近隣のコインパーキングをご利用ください</p>
+                    </div>
+                    <div class="shopInfoItem">
+                        <p class="txt shopInfoItemHead">支払い方法</p>
+                        <p class="txt lsAdjust">現金・クレジットカード・PayPay等のQR決済サービス</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="reserveSection sectionBg">
+        <div class="sectionBgImg">
+            <img src={siteDomein + '20240705165313508876.png'} alt="背景用の画像" class="img" />
+        </div>
+        <div class="sectionInr">
+            <div class="sectionHead">
+                <h2 class="sectionHeadTtl">お問い合わせ</h2>
+                <p class="sectionHeadDesc">Contact</p>
+            </div>
+            <p class="txt">
+                とんこつ家ZUNのホームページをご覧いただきありがとうございます。<br>サービスに関する内容は、お問い合わせは下記お電話、
+                <br class="spHidden">またはお問い合わせフォームよりご連絡ください。
+            </p>
+            <div class="btnArea">
+                <div class="telLinkWrap">
+                    <a href="tel:0263878839" class="telLink">
+                        <img src={siteDomein + '20240705222049522701.png'} alt="電話アイコン画像" width="24" height="24">
+                        <p class="telLinkTxt">0263-87-8839</p>
+                    </a>
+                    <p class="txt">OPEN / 11:30〜26:00(不定休)</p>
+                </div>
+                <a href="./contact" class="normalBtn contactBtn">
+                    <div class="contactBtnIcon">
+                        <img src={siteDomein + '20240705222049526634.png'} alt="メールアイコン画像" width="24" height="24" class="defaultImg">
+                        <img src={siteDomein + '20240708163837487331.png'} alt="メールアイコン画像" width="24" height="24" class="hoverImg">
+                    </div>
+                    <p class="contactBtnTxt">お問い合わせフォーム</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="jsFooter">
+        <div class="footerRow flex">
+            <div class="footerInfo">
+                <a href="./" class="footerLogo">
+                    <img src={siteDomein + '20240705165313940668.png'} alt="とんこつ家ZUN ロゴ画像" width="256" height="67" class="img" />
+                </a>
+                <div class="footerAddress">
+                    <p class="txt">長野県松本市中央1-2-16 1F</p>
+                    <a href="tel:0263878839" class="footerAddressLink">
+                        <p class="txt">Tel.0263-87-8839</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footerLink">
+                <a href="./" class="navLink">
+                    <p class="navLinkTxt">ホーム
+                    </p>
+                </a>
+                <a href="./commitment" class="navLink">
+                    <p class="navLinkTxt">こだわり
+                    </p>
+                </a>
+                <a href="./menu" class="navLink">
+                    <p class="navLinkTxt">メニュー
+                    </p>
+                </a>
+                <a href="./drink" class="navLink">
+                    <p class="navLinkTxt">ドリンク
+                    </p>
+                </a>
+                <a href="./recruit" class="navLink">
+                    <p class="navLinkTxt">採用情報
+                    </p>
+                </a>
+                <a href="./shop" class="navLink">
+                    <p class="navLinkTxt">店舗情報
+                    </p>
+                </a>
+                <a href="#" class="navLink">
+                    <p class="navLinkTxt">新着情報
+                    </p>
+                </a>
+                <a href="./contact" class="navLink">
+                    <p class="navLinkTxt">お問い合わせ
+                    </p>
+                </a>
+                <a href="#" class="navLink">
+                    <p class="navLinkTxt">プライバシーポリシー
+                    </p>
+                </a>
+                <a href="#" target="_blank" rel="noopener" class="icon">
+                    <img src={siteDomein + '20240705222040585642.png'} alt="Instagramアイコン画像" width="24" height="24">
+                </a>
+            </div>
+        </div>
+        <div class="footerCopy">
+            <p class="txt">&copy; 2024 とんこつ家ZUN</p>
+            <div id="pageTopBtnLink" class="pageTopBtn">
+                <a href="./" class="pageTopBtnLink">
+                    <img src={siteDomein + '20240705222040352374.png'} alt="ページの上部へ戻る" width="8" height="26" />
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>

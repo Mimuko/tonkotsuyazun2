@@ -1,0 +1,244 @@
+@use "base/variables" as v;
+
+/*--------------------------------
+	SHOP
+--------------------------------*/
+
+.shopSection {
+    position: relative;
+    z-index: 0;
+    background: #EEEEE2;
+}
+
+.shopRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    margin-bottom: 40px;
+    width: 100%;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+        -moz-column-gap: 16px;
+        column-gap: 16px;
+    }
+    @media (min-width: 1440px) {
+        -moz-column-gap: 80px;
+        column-gap: 80px;
+    }
+}
+
+.shopInfo {
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+    @media (min-width: 768px) {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.shopInfoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #BDB994;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: v.$font-size-s;
+    text-align: center;
+    @media (min-width: 768px) {
+        text-align: left;
+        flex-direction: row;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        justify-content: flex-start;
+    }
+    &:has(.img) {
+        border: none;
+    }
+    &:not(:last-of-type) {
+        margin-bottom: 8px;
+    }
+}
+
+.shopInfoItemHead {
+    @media (min-width: 768px) {
+        max-width: 76px;
+        width: 100%;
+    }
+}
+
+.shopInfoItemLogo {
+    max-width: 256px;
+    width: 100%;
+    margin: auto;
+    @media (min-width: 1024px) {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*--------------------------------
+    RESERVATION
+  --------------------------------*/
+
+.normalBtnArea {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 16px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 32px;
+    }
+}
+
+.reserveSection {
+    color: v.$white-color;
+    & .sectionInr {
+        display: block;
+        position: relative;
+        z-index: 2;
+        @media (min-width: 768px) {
+            max-width: 620px;
+            text-align: center;
+        }
+    }
+}
+
+.reservationTtl {
+    text-align: center;
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+}
+
+.reservationTtlTxt {
+    font-size: 20px;
+    @media (min-width: 768px) {
+        font-size: v.$font-size-l;
+    }
+}
+
+.reservationTtlDesc {
+    font-size: v.$font-size-s;
+}
+
+
+/*--------------------------------
+	BUTTON
+--------------------------------*/
+
+.btnArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-top: 16px;
+    @media (min-width: 1024px) {
+        -moz-column-gap: 80px;
+        column-gap: 80px;
+        max-width: 620px;
+        margin: 32px auto 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+
+/*--------------------------------
+	FOOTER
+--------------------------------*/
+
+.footer {
+    background: v.$footer-color;
+    .contactBtn {
+        padding: 8px;
+    }
+}
+
+.footerRow {
+    width: 95%;
+    max-width: v.$large-width;
+    margin: 0 auto 56px;
+    align-items: center;
+    padding-top: 80px;
+    @media (min-width: 1024px) {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    max-width: 256px;
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+    }
+}
+
+.footerLink {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 25px;
+    justify-content: center;
+    @media (min-width: 768px) {
+        width: 80%;
+        justify-content: flex-start;
+    }
+    @media (min-width: 1024px) {
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+        margin-left: auto;
+        width: 550px;
+    }
+}
+
+.footerCopy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    position: relative;
+    margin-top: 32px;
+    color: v.$black-color;
+    font-size: v.$font-size-s;
+    @media (min-width: 768px) {
+        margin-top: 0;
+        max-width: v.$large-width;
+        margin: 0 auto;
+    }
+}
+
+.footerInfoItem {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 16px;
+    -moz-column-gap: 16px;
+    column-gap: 16px;
+}
+
+.footerAddress {
+    text-align: center;
+    @media (min-width: 1024px) {
+        text-align: left;
+    }
+}
