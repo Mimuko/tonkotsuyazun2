@@ -1,4 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import shopLogo from '../assets/images/shop-logo.png';
+import telIcon from '../assets/images/tel-icon.png';
+import instIcon from '../assets/images/inst-icon--black.png';
+import mailIcon from '../assets/images/mail-icon--white.png';
+import mailIconBlack from '../assets/images/mail-icon--black.png';
+import topLink from '../assets/images/top-icon.png';
+
 const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
 ---
 <div class="commonFooter">
@@ -14,7 +22,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                 </div>
                 <div class="shopInfo">
                     <div class="shopInfoItem shopInfoItemLogo">
-                        <img src={siteDomein + '20240705165313940668.png'} alt="とんこつ家ZUN ロゴ画像" width="230" height="110" class="img" />
+                        <Image src={shopLogo} alt="とんこつ家ZUN ロゴ画像" class="img" />
                     </div>
                     <div class="shopInfoItem">
                         <p class="txt shopInfoItemHead">住所</p>
@@ -52,9 +60,6 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
 
     </div>
     <div class="reserveSection sectionBg">
-        <div class="sectionBgImg">
-            <img src={siteDomein + '20240705165313508876.png'} alt="背景用の画像" class="img" />
-        </div>
         <div class="sectionInr">
             <div class="sectionHead">
                 <h2 class="sectionHeadTtl">お問い合わせ</h2>
@@ -67,15 +72,15 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
             <div class="btnArea">
                 <div class="telLinkWrap">
                     <a href="tel:0263878839" class="telLink">
-                        <img src={siteDomein + '20240705222049522701.png'} alt="電話アイコン画像" width="24" height="24">
+                        <Image src={telIcon} alt="電話アイコン画像" class="icon" />
                         <p class="telLinkTxt">0263-87-8839</p>
                     </a>
                     <p class="txt">OPEN / 11:30〜26:00(不定休)</p>
                 </div>
                 <a href="./contact" class="normalBtn contactBtn">
                     <div class="contactBtnIcon">
-                        <img src={siteDomein + '20240705222049526634.png'} alt="メールアイコン画像" width="24" height="24" class="defaultImg">
-                        <img src={siteDomein + '20240708163837487331.png'} alt="メールアイコン画像" width="24" height="24" class="hoverImg">
+                        <Image src={mailIcon} alt="メールアイコン画像" class="defaultImg" />
+                        <Image src={mailIconBlack} alt="メールアイコン画像" class="hoverImg" />
                     </div>
                     <p class="contactBtnTxt">お問い合わせフォーム</p>
                 </a>
@@ -86,7 +91,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
         <div class="footerRow flex">
             <div class="footerInfo">
                 <a href="./" class="footerLogo">
-                    <img src={siteDomein + '20240705165313940668.png'} alt="とんこつ家ZUN ロゴ画像" width="256" height="67" class="img" />
+                    <Image src={shopLogo} alt="とんこつ家ZUN ロゴ画像" class="img" />
                 </a>
                 <div class="footerAddress">
                     <p class="txt">長野県松本市中央1-2-16 1F</p>
@@ -133,7 +138,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                     </p>
                 </a>
                 <a href="#" target="_blank" rel="noopener" class="icon">
-                    <img src={siteDomein + '20240705222040585642.png'} alt="Instagramアイコン画像" width="24" height="24">
+                    <Image src={instIcon} alt="Instagramアイコン画像" />
                 </a>
             </div>
         </div>
@@ -141,7 +146,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
             <p class="txt">&copy; 2024 とんこつ家ZUN</p>
             <div id="pageTopBtnLink" class="pageTopBtn">
                 <a href="./" class="pageTopBtnLink">
-                    <img src={siteDomein + '20240705222040352374.png'} alt="ページの上部へ戻る" width="8" height="26" />
+                    <Image src={topLink} alt="ページの上部へ戻る" />
                 </a>
             </div>
         </div>

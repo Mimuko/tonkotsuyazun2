@@ -10,9 +10,25 @@ import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
 import Head from '../components/head.astro';
 
+import { Image } from 'astro:assets';
+import mainVisual from '../assets/images/main-visual.png';
+import mainVisualLogo from '../assets/images/logo.png';
+import scrollIcon from '../assets/images/scroll-icon.png';
+import commitmentImg01 from '../assets/images/commitment-img01.png';
+import commitmentImg02 from '../assets/images/commitment-img02.png';
+import attractionImg01 from '../assets/images/attraction-img01.png';
+import attractionImg02 from '../assets/images/attraction-img02.png';
+import attractionImg03 from '../assets/images/attraction-img03.png';
+import attractionImg04 from '../assets/images/attraction-img04.png';
+import linkImg01 from '../assets/images/link-img01.png';
+import linkImg02 from '../assets/images/link-img02.png';
+import recruitImg01 from '../assets/images/recruit-img01.png';
+import recruitImg02 from '../assets/images/recruit-img02.png';
+import recruitImg03 from '../assets/images/recruit-img03.png';
+import recruitImg04 from '../assets/images/recruit-img04.png';
+import recruitImg05 from '../assets/images/recruit-img05.png';
 
 const pageTitle = "トップページ｜豚骨らあめん専門店 とんこつ家ZUN";
-const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
 ---
 
 <!DOCTYPE html>
@@ -28,11 +44,11 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
     <main class="content">
         <div class="firstView">
             <div class="firstViewImg">
-                <img src={siteDomein + '20240705164913501507.png'} alt="ファーストビュー背景画像" class="img" />
+                <Image src={mainVisual} alt="ファーストビュー" class="img" />
             </div>
             <div class="firstViewHead">
                 <div class="firstViewTtl">
-                    <img class="firstViewTtlLogo" src={siteDomein + '20240705164913289417.png'} alt="とんこつ家ZUN ロゴ画像" width="178" height="180">
+                    <Image class="firstViewTtlLogo" src={mainVisualLogo} alt="とんこつ家ZUN ロゴ画像" />
                 </div>
                 <div class="firstViewDesc">
                     <h1 class="firstViewDescTxt">
@@ -43,7 +59,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
             <div class="firstViewScroll">
                 <p class="scrollTxt">SCROLL</p>
                 <div class="firstViewScrollImg">
-                    <img src={siteDomein + '20240706145530603984.png'} alt="ラーメンのアイコン画像" width="32" height="32">
+                    <Image src={scrollIcon} alt="ラーメンのアイコン画像" />
                 </div>
             </div>
         </div>
@@ -56,7 +72,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                 <div class="commitmentSectionMain">
                     <p class="decorationTxt decorationSmall">Commitment</p>
                     <div class="commitmentSectionImg">
-                        <img src={siteDomein + '20240705164913585107.png'} width="823" height="386" alt="店内の内装画像" class="img">
+                        <Image src={commitmentImg01} alt="店内の内装画像" class="img" />
                     </div>
                 </div>
             </div>
@@ -67,7 +83,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                     店内でじっくりと仕込んだスープと、それぞれのラーメンに最適な麺との組み合わせをお楽しみください。<br>
                     テーブル席も充実しており、グループやご家族連れのお客様にもゆったりとお過ごしいただけます。</p>
                 <div class="commitmentSectionBottomImg">
-                    <img src={siteDomein + '20240705164913177849.png'} alt="提供しているラーメンのイメージ画像" class="img" width="371" height="252">
+                    <Image src={commitmentImg02} alt="提供しているラーメンのイメージ画像" class="img" />
                 </div>
             </div>
             <div class="normalBtnWrap">
@@ -96,11 +112,11 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                             家族や友人と訪れる際にも、みんなでシェアして楽しめるサイドメニューが充実しているため、ラーメンを中心とした食事がさらに楽しいひとときとなるでしょう。
                         </p>
                         <div class="featureRowHeadImg">
-                            <img src={siteDomein + '20240705164913380290.png'} alt="提供しているお料理のイメージ画像" class="img" width="300" height="136">
+                            <Image src={attractionImg01} alt="提供しているお料理のイメージ画像" class="img" />
                         </div>
                     </div>
                     <div class="featureRowBody">
-                        <img src={siteDomein + '20240705164913235127.png'} alt="提供しているお料理のイメージ画像" class="img" width="530" height="556">
+                        <Image src={attractionImg02} alt="提供しているお料理のイメージ画像" class="img" />
                     </div>
                 </div>
                 <div class="featureRow flex">
@@ -116,11 +132,11 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                             またラーメンだけでなく、居酒屋間隔でサイドメニューを食べながらお酒を飲んでいただくことも可能ですので、ぜひお立ち寄りください。
                         </p>
                         <div class="featureRowHeadImg">
-                            <img src={siteDomein + '20240705164913812007.png'} alt="提供しているお料理のイメージ画像" class="img" width="300" height="136">
+                            <Image src={attractionImg03} alt="提供しているお料理のイメージ画像" class="img" />
                         </div>
                     </div>
                     <div class="featureRowBody">
-                        <img src={siteDomein + '20240705164913819545.png'} alt="提供しているお料理のイメージ画像" class="img" width="530" height="556">
+                        <Image src={attractionImg04} alt="提供しているお料理のイメージ画像" class="img" />
                     </div>
                 </div>
                 <div class="featureDecorationMenu">
@@ -136,7 +152,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
             <div class="sectionInr flex">
                 <div class="linkBox">
                     <a href="./menu" class="imgLink">
-                        <img src={siteDomein + '20240705223515619095.png'} alt="メニュー 背景用の画像" width="540" height="208" class="backImg" />
+                        <Image src={linkImg01} alt="メニュー 背景用の画像" class="backImg" />
                         <div class="front">
                             <p class="frontTxt">メニュー</p>
                             <p class="frontDesc">Menu</p>
@@ -145,7 +161,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                 </div>
                 <div class="linkBox">
                     <a href="./drink" class="imgLink">
-                        <img src={siteDomein + '20240705223515225027.png'} alt="ドリンク 背景用の画像" width="540" height="208" class="backImg" />
+                        <Image src={linkImg02} alt="ドリンク 背景用の画像" class="backImg" />
                         <div class="front">
                             <p class="frontTxt">ドリンク</p>
                             <p class="frontDesc">Drink</p>
@@ -170,7 +186,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                         <p class="txt">情熱を持ってラーメン作りに取り組み、一緒に成長していける仲間をお待ちしています。</p>
                     </div>
                     <div class="recruitRowBody">
-                        <img src={siteDomein + '20240705164913529256.png'} alt="店頭の画像" class="img" width="651" height="370">
+                        <Image src={recruitImg01} alt="店頭の画像" class="img" />
                     </div>
                 </div>
                 <div class="flex recruitRowBottom">
@@ -183,13 +199,13 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                     <div class="recruitRowBody">
                         <div class="tile">
                             <div class="tileItem">
-                                <img src={siteDomein + '20240705164913813956.png'} alt="提供しているラーメンのイメージ画像" class="img" width="300" height="250">
+                                <Image src={recruitImg02} alt="提供しているラーメンのイメージ画像" class="img" />
                             </div>
                             <div class="tileItem">
-                                <img src={siteDomein + '20240705164913282206.png'} alt="提供しているラーメンのイメージ画像" class="img" width="300" height="250">
+                                <Image src={recruitImg03} alt="提供しているラーメンのイメージ画像" class="img" />
                             </div>
                             <div class="tileItem">
-                                <img src={siteDomein + '20240705164913612037.png'} alt="提供しているラーメンのイメージ画像" class="img" width="300" height="250">
+                                <Image src={recruitImg04} alt="提供しているラーメンのイメージ画像" class="img" />
                             </div>
                         </div>
                     </div>
@@ -214,9 +230,6 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
             <div class="recruitDecorationBottom">
                 <p class="decorationTxt decorationMedium">Job Information</p>
             </div>
-            <div class="sectionBgImg">
-                <img src={siteDomein + '20240705165230115940.png'} alt="背景用の画像" width="1380" height="1291" class="img" />
-            </div>
         </div>
         <div class="section newsSection">
             <div class="sectionInr">
@@ -235,7 +248,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
             </div>
         </div>
         <a class="firstViewBtn" href="#recruit">
-            <img src={siteDomein + '20240705164913171723.png'} alt="採用情報はこちら" class="img" width="169" height="152">
+            <Image src={recruitImg05} alt="採用情報はこちら" class="img" />
         </a>
     </main>
 	<Footer />

@@ -1,27 +1,32 @@
 ---
-const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
+import { Image } from 'astro:assets';
+import commonLogo from '../assets/images/common-logo.png';
+import telIcon from '../assets/images/tel-icon.png';
+import instIcon from '../assets/images/inst-icon--white.png';
+import mailIcon from '../assets/images/mail-icon--white.png';
+import mailIconBlack from '../assets/images/mail-icon--black.png';
 ---
 
 <header id="jsHeader" class="header">
     <div class="headerInr">
-        <a href="./" class="logo">
-            <img src={siteDomein + '20240705165230486654.png'} alt="とんこつ家ZUN ロゴ画像" width="248" height="67" class="logoImg" />
+        <a href="/" class="logo">
+            <Image src={commonLogo} alt="豚骨らあめん専門店 とんこつ家ZUN ロゴ画像" class="logoImg" />
         </a>
         <nav class="headerNav">
             <div class="links">
-                <a href="./commitment" class="navLink">
+                <a href="/commitment" class="navLink">
                     <p class="navLinkTxt">こだわり</p>
                 </a>
-                <a href="./menu" class="navLink">
+                <a href="/menu" class="navLink">
                     <p class="navLinkTxt">メニュー</p>
                 </a>
-                <a href="./drink" class="navLink">
+                <a href="/drink" class="navLink">
                     <p class="navLinkTxt">ドリンク</p>
                 </a>
-                <a href="./recruit" class="navLink">
+                <a href="/recruit" class="navLink">
                     <p class="navLinkTxt">採用情報</p>
                 </a>
-                <a href="./shop" class="navLink">
+                <a href="/shop" class="navLink">
                     <p class="navLinkTxt">店舗情報</p>
                 </a>
                 <a href="#" class="navLink">
@@ -29,7 +34,7 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                 </a>
                 <div class="tel">
                     <a href="tel:0263878839" class="telLink link">
-                        <img src={siteDomein + '20240705222049522701.png'} alt="電話アイコン画像" width="24" height="24" />
+                        <Image src={telIcon} alt="電話アイコン画像" />
                         <p class="telLinkTxt">0263-87-8839</p>
                     </a>
                     <p class="hours">OPEN / 11:30〜26:00(不定休)</p>
@@ -37,12 +42,12 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
             </div>
             <div class="btns">
                 <a href="#" target="_blank" rel="noopener" class="icon link">
-                    <img src={siteDomein + '20240705222049868598.png'} alt="Instagramアイコン画像" width="24" height="24" />
+                    <Image src={instIcon} alt="Instagramアイコン画像" />
                 </a>
                 <a href="./contact" class="normalBtn contactBtn">
                     <div class="contactBtnIcon">
-                        <img src={siteDomein + '20240705222049526634.png'} alt="メールアイコン画像" width="24" height="24" class="defaultImg">
-                        <img src={siteDomein + '20240708163837487331.png'} alt="メールアイコン画像" width="24" height="24" class="hoverImg">
+                        <Image src={mailIcon} alt="メールアイコン画像" class="defaultImg" />
+                        <Image src={mailIconBlack} alt="メールアイコン画像" class="hoverImg" />
                     </div>
                     <p class="contactBtnTxt">お問い合わせ</p>
                 </a>
@@ -57,27 +62,27 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
     <div class="globalMenuSp">
         <nav class="hUl">
             <div class="hamburgerList">
-                <a href="./commitment" class="navLink">
+                <a href="/commitment" class="navLink">
                     <p class="navLinkTxt">こだわり</p>
                 </a>
             </div>
             <div class="hamburgerList">
-                <a href="./menu" class="navLink">
+                <a href="/menu" class="navLink">
                     <p class="navLinkTxt">メニュー</p>
                 </a>
             </div>
             <div class="hamburgerList">
-                <a href="./drink" class="navLink">
+                <a href="/drink" class="navLink">
                     <p class="navLinkTxt">ドリンク</p>
                 </a>
             </div>
             <div class="hamburgerList">
-                <a href="./recruit" class="navLink">
+                <a href="/recruit" class="navLink">
                     <p class="navLinkTxt">採用情報</p>
                 </a>
             </div>
             <div class="hamburgerList">
-                <a href="./shop" class="navLink">
+                <a href="/shop" class="navLink">
                     <p class="navLinkTxt">店舗情報</p>
                 </a>
             </div>
@@ -87,13 +92,13 @@ const siteDomein = "https://tonkotsuya-zun.com/system_panel/uploads/images/";
                 </a>
             </div>
             <div class="hamburgerList">
-                <a href="./contact" class="navLink">
+                <a href="/contact" class="navLink">
                     <p class="navLinkTxt">お問い合わせ</p>
                 </a>
             </div>
             <div class="hamburgerList">
                 <a href="tel:0263878839" class="telLink navLink">
-                    <img src={siteDomein + '20240705222049522701.png'} alt="電話アイコン画像" width="24" height="24" />
+                    <Image src={telIcon} alt="電話アイコン画像" />
                     <p class="telLinkTxt">0263-87-8839</p>
                 </a>
             </div>
